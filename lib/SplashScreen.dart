@@ -1,3 +1,4 @@
+import 'package:face_mask_detector/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -11,6 +12,7 @@ class _MySplashPageState extends State<MySplashPage> {
   Widget build(BuildContext context) {
     return SplashScreen(
       seconds: 15,
+      navigateAfterSeconds: HomePage(),
       title: Text(
         'Are You Wearing A Face Mask? Lets Find Out!!!!',
         style: TextStyle(
